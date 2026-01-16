@@ -6,7 +6,8 @@ import { useEffect, useRef } from "react";
 import dayjs from "dayjs";
 import { MdVolumeUp } from "react-icons/md";
 import { useGetAudio } from "@/hooks/useGetAudio";
-import { FaSpinner } from "react-icons/fa";
+import { FaArrowLeft, FaSpinner } from "react-icons/fa";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
 interface DreamResultProps {
   dreamText: string;
@@ -49,7 +50,9 @@ export const DreamResult = ({
           onClick={onBack}
           className="mb-8 text-white/70 hover:text-white transition-colors flex items-center space-x-2"
         >
-          <span>←</span>
+          <span>
+            <FaArrowLeft />
+          </span>
           <span>Back to dreams</span>
         </button>
 
@@ -68,19 +71,28 @@ export const DreamResult = ({
                   <h3 className="text-xl font-semibold text-white">
                     AI Interpretation
                   </h3>
-
-                  <button
-                    onClick={handlePlay}
-                    disabled={isPending}
-                    className="text-white/80 hover:text-white disabled:opacity-50 text-xl"
-                    title={isPending ? "Generating voice…" : "Play voice"}
-                  >
-                    {isPending ? (
-                      <FaSpinner className="animate-spin" />
-                    ) : (
-                      <MdVolumeUp />
-                    )}
-                  </button>
+                  <Tooltip defaultOpen={true}>
+                    <TooltipTrigger asChild>
+                      <button
+                        onClick={handlePlay}
+                        disabled={isPending}
+                        className="text-white/80 hover:text-white disabled:opacity-50 text-xl"
+                        title={isPending ? "Generating voice…" : "Play voice"}
+                      >
+                        {isPending ? (
+                          <FaSpinner className="animate-spin" />
+                        ) : (
+                          <MdVolumeUp />
+                        )}
+                      </button>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>
+                        Use Elevenlabs&apos; Scribe V2 model to listen to the
+                        interpretation.
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
 
                   {/* hidden audio */}
                   <audio ref={audioRef} />

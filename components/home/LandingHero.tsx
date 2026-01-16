@@ -18,9 +18,12 @@ export const LandingHero = () => {
           >
             Start Dreaming
           </Link>
-          <button className="px-8 py-4 border border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all">
+          <Link
+            href={"/about"}
+            className="px-8 py-4 border border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all"
+          >
             Learn More
-          </button>
+          </Link>
         </div>
       </div>
     </section>

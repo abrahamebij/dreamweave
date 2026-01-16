@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
 import Link from "next/link";
 import Img from "./ui/Img";
-import { useState } from 'react';
+import { useState } from "react";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,17 +25,23 @@ export const Navigation = () => {
             Home
           </Link>
           <Link
+            href="/about"
+            className="text-white/80 hover:text-white transition-colors hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]"
+          >
+            About
+          </Link>
+          <Link
             href="/dream"
             className="text-white/80 hover:text-white transition-colors hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]"
           >
             Dream
           </Link>
-          <a
+          {/* <a
             href="#gallery"
             className="text-white/80 hover:text-white transition-colors hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]"
           >
             Gallery
-          </a>
+          </a> */}
         </div>
 
         <button
@@ -73,19 +79,26 @@ export const Navigation = () => {
               Home
             </Link>
             <Link
+              href="/about"
+              className="block text-white/80 hover:text-white transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              About
+            </Link>
+            <Link
               href="/dream"
               className="block text-white/80 hover:text-white transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Dream
             </Link>
-            <a
+            {/* <a
               href="#gallery"
               className="block text-white/80 hover:text-white transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Gallery
-            </a>
+            </a> */}
           </div>
         </div>
       )}

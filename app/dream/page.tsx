@@ -36,7 +36,7 @@ const Dream = () => {
               onVisualize={handleVisualizeDream}
               isLoading={isPending}
             />
-            <UserDreamGallery />
+            {/* <UserDreamGallery /> */}
           </>
         ) : (
           <DreamResult

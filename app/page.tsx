@@ -9,7 +9,7 @@ const Home = () => {
       <LandingHero />
       <Features />
       <HowItWorks />
-      <DreamGallery />
+      {/* <DreamGallery /> */}
     </main>
   );
 };

@@ -1,6 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import { FaMicrophone, FaSpinner, FaStop } from "react-icons/fa";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
 interface HeroProps {
   dreamText: string;
@@ -165,20 +166,30 @@ function RecorderButton({
 
   return (
     <div className="flex flex-col items-end gap-2">
-      <button
-        onClick={isRecording ? stopRecording : startRecording}
-        className={`px-3 py-2 rounded-md text-sm transition-all ${
-          isRecording ? "bg-red-500 text-white" : "bg-white/10 text-white"
-        }`}
-      >
-        {status === "uploading" ? (
-          <FaSpinner className="animate-spin" />
-        ) : isRecording ? (
-          <FaStop />
-        ) : (
-          <FaMicrophone />
-        )}
-      </button>
+      <Tooltip defaultOpen={true}>
+        <TooltipTrigger asChild>
+          <button
+            onClick={isRecording ? stopRecording : startRecording}
+            className={`px-3 py-2 rounded-md text-sm transition-all ${
+              isRecording ? "bg-red-500 text-white" : "bg-white/10 text-white"
+            }`}
+          >
+            {status === "uploading" ? (
+              <FaSpinner className="animate-spin" />
+            ) : isRecording ? (
+              <FaStop />
+            ) : (
+              <FaMicrophone />
+            )}
+          </button>
+        </TooltipTrigger>
+        <TooltipContent>
+          <p>
+            Use Elevenlabs&apos; Scribe V2 model to listen to the
+            interpretation.
+          </p>
+        </TooltipContent>
+      </Tooltip>
 
       {/* {status === "uploading" && (
         <div className="text-xs text-white/60">Uploading...</div>
