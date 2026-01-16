@@ -5,6 +5,7 @@ import { Toaster } from "sonner";
 import { Providers } from "@/providers";
 import { Navigation } from "@/components/Navigation";
 import { StarField } from "@/components/StarField";
+import Footer from "@/components/Footer";
 
 const grotesk = Space_Grotesk({
   variable: "--font-grotesk",
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Navigation />
         <Toaster richColors position="top-right" />
         <Providers>{children}</Providers>
+        <Footer />
       </body>
     </html>
   );
