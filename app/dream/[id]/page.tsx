@@ -64,13 +64,13 @@ const DreamDetail = () => {
             </div>
 
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-purple-500/30 to-pink-500/30 rounded-2xl overflow-hidden">
+              <div className="aspect-square bg-linear-to-br from-purple-500/30 to-pink-500/30 rounded-2xl overflow-hidden">
                 <img
                   src={dummyDream.image}
                   alt={dummyDream.title}
                   className="w-full h-full object-cover opacity-80"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/50 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-purple-900/50 to-transparent" />
               </div>
             </div>
           </div>

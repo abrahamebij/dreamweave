@@ -8,7 +8,7 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-dream-nav bg-black/10 backdrop-blur-md">
+    <nav className="bg-dream-nav bg-black/10 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex gap-2 text-2xl font-bold items-center">
           <Img className="w-8" src="/logo.png" alt="Site's Logo" />

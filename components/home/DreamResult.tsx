@@ -6,8 +6,9 @@ import { useEffect, useRef } from "react";
 import dayjs from "dayjs";
 import { MdVolumeUp } from "react-icons/md";
 import { useGetAudio } from "@/hooks/useGetAudio";
-import { FaArrowLeft, FaSpinner } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
+import Waveform from "../ui/Waveform";
 
 interface DreamResultProps {
   dreamText: string;
@@ -76,20 +77,16 @@ export const DreamResult = ({
                       <button
                         onClick={handlePlay}
                         disabled={isPending}
-                        className="text-white/80 hover:text-white disabled:opacity-50 text-xl"
-                        title={isPending ? "Generating voice…" : "Play voice"}
+                        className="flex items-center gap-2 text-white/80 hover:text-white disabled:opacity-50"
                       >
-                        {isPending ? (
-                          <FaSpinner className="animate-spin" />
-                        ) : (
-                          <MdVolumeUp />
-                        )}
+                        {isPending ? <Waveform /> : <MdVolumeUp />}
                       </button>
                     </TooltipTrigger>
                     <TooltipContent>
                       <p>
-                        Use Elevenlabs&apos; Scribe V2 model to listen to the
-                        interpretation.
+                        {isPending
+                          ? "Generating voice…"
+                          : "Use Elevenlabs' Scribe V2 model to listen to the interpretation."}
                       </p>
                     </TooltipContent>
                   </Tooltip>
