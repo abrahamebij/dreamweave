@@ -4,7 +4,7 @@
 
 ## Cover Image
 
-![DreamWeave Cover Image](https://i.ibb.co/Kpgb42kK/fbdfd594-d5a0-43b6-83b4-964fccbdaa2f-0.jpg)
+![DreamWeave Cover Image](https://github.com/user-attachments/assets/1b31ab2b-c1da-40de-a981-7abe57a97da6)
 
 ## 🎤 Overview
 
