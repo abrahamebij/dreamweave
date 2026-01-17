@@ -2,6 +2,9 @@
 
 *Real-Time Spoken Interpretation for the Web*
 
+![Static Badge](https://img.shields.io/badge/Built%20With%20Elevenlabs%20API?logo=elevenlabs)
+
+
 ## Cover Image
 
 ![DreamWeave Cover Image](https://github.com/user-attachments/assets/1b31ab2b-c1da-40de-a981-7abe57a97da6)
