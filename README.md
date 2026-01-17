@@ -101,14 +101,36 @@ This ensures:
 
 ---
 
-## 🗺 Roadmap
+## How to Run Locally
 
-1. Multi-language interpretation
-2. Speaker tone selection (calm, energetic, narrative)
-3. Live microphone input → interpreted output
-4. Streaming chunked audio (near-zero latency)
-5. Browser extension support
-6. API version for third-party integrations
+To run this project locally, follow these steps:
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/abrahamebij/dreamweave.git
+    cd dreamweave
+    ```
+
+2. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3. **Set up environment variables:**
+
+    Create a `.env` file in the root of the project and add the necessary environment variables. (e.g., API keys for ElevenLabs, Gemini etc.). Refer to `.env.example` if available.
+
+4. **Run the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+5. **Open in your browser:**
+
+    The application will be accessible at `http://localhost:3000`
 
 ---
 

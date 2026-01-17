@@ -17,7 +17,7 @@ export const Hero = ({
   isLoading,
 }: HeroProps) => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 pt-20">
+    <section className="min-h-screen flex items-center justify-center px-6 pt-10">
       <div className="max-w-2xl w-full text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-linear-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
           Describe your dream...
