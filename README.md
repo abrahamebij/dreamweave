@@ -20,6 +20,9 @@ It’s **context-aware spoken interpretation**, designed to feel human, not robo
 
 *(Best experienced with headphones 🎧)*
 
+![Recording (1)](https://github.com/user-attachments/assets/e1687dac-1ae0-40de-a65d-aed93fd1b0b1)
+
+
 ---
 
 ## 🔊 Core Features
