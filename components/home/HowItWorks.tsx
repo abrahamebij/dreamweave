@@ -11,7 +11,7 @@ export const HowItWorks = () => {
             <div className="w-20 h-20 bg-linear-to-r from-purple-500 to-pink-500 rounded-full mx-auto mb-6 flex items-center justify-center text-3xl font-bold text-white shadow-lg">
               ✍️
             </div>
-            <div className="absolute -top-2 -right-2 w-8 h-8 bg-linear-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-sm font-bold text-white">
+            <div className="absolute -top-2 -right-2 w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center text-sm font-bold text-white">
               1
             </div>
             <h3 className="text-xl font-semibold text-white mb-4">
@@ -27,7 +27,7 @@ export const HowItWorks = () => {
             <div className="w-20 h-20 bg-linear-to-r from-blue-500 to-purple-500 rounded-full mx-auto mb-6 flex items-center justify-center text-3xl font-bold text-white shadow-lg">
               🤖
             </div>
-            <div className="absolute -top-2 -right-2 w-8 h-8 bg-linear-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-sm font-bold text-white">
+            <div className="absolute -top-2 -right-2 w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center text-sm font-bold text-white">
               2
             </div>
             <h3 className="text-xl font-semibold text-white mb-4">AI Magic</h3>
@@ -41,7 +41,7 @@ export const HowItWorks = () => {
             <div className="w-20 h-20 bg-linear-to-r from-pink-500 to-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center text-3xl font-bold text-white shadow-lg">
               🔍
             </div>
-            <div className="absolute -top-2 -right-2 w-8 h-8 bg-linear-to-r from-pink-600 to-blue-600 rounded-full flex items-center justify-center text-sm font-bold text-white">
+            <div className="absolute -top-2 -right-2 w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center text-sm font-bold text-white">
               3
             </div>
             <h3 className="text-xl font-semibold text-white mb-4">
@@ -55,7 +55,7 @@ export const HowItWorks = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-flex items-center space-x-4 bg-dream-glass-dark rounded-full px-6 py-3">
+          <div className="inline-flex flex-col sm:flex-row gap-y-1 justify-center items-center space-x-4 bg-dream-glass-dark rounded-full px-6 py-3">
             <span className="text-white/60 text-sm">Ready to start?</span>
             <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
             <span className="text-purple-400 font-semibold">

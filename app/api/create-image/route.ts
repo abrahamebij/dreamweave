@@ -27,7 +27,7 @@ export async function POST(request: Request) {
 
       2. **Dream Interpreter (Meaning)**  
         - Provide a brief psychological or symbolic interpretation of the dream.  
-        - 2-3 sentences max.
+        - 4-5 sentences max.
         - No mystical or supernatural claims.
 
       Your output must be a JSON object with exactly two fields:

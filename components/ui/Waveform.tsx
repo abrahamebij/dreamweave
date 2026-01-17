@@ -4,7 +4,7 @@ function Waveform() {
       {[...Array(5)].map((_, i) => (
         <span
           key={i}
-          className="w-1 bg-purple-400 animate-wave"
+          className="w-1 bg-linear-to-b from-purple-400 to-pink-400 animate-wave"
           style={{ animationDelay: `${i * 0.1}s` }}
         />
       ))}
