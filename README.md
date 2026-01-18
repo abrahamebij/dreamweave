@@ -11,7 +11,7 @@ Demo Video: https://youtu.be/jIrZOCIUYO0?si=Brso6B0QbtrLf2So
 
 ## 🎤 Overview
 
-**Dreamweave** is a real-time spoken interpretation web app that converts live or generated text into natural, expressive speech — instantly.
+**Dreamweave** is a real-time dream interpretation web app that converts live or generated text into natural, expressive speech — instantly.
 Built for accessibility, education, and global communication, Dreamweave demonstrates how **AI voice, streaming UX, and modern web tech** can work together seamlessly.
 
 This isn’t just text-to-speech.
