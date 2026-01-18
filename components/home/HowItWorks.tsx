@@ -7,7 +7,7 @@ export const HowItWorks = () => {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-dream-glass rounded-2xl p-8 text-center group hover:scale-105 transition-all duration-300">
+          <div className="bg-dream-glass rounded-2xl p-8 text-center group transition-all duration-300">
             <div className="w-20 h-20 bg-linear-to-r from-purple-500 to-pink-500 rounded-full mx-auto mb-6 flex items-center justify-center text-3xl font-bold text-white shadow-lg">
               ✍️
             </div>
@@ -23,7 +23,7 @@ export const HowItWorks = () => {
             </p>
           </div>
 
-          <div className="bg-dream-glass rounded-2xl p-8 text-center group hover:scale-105 transition-all duration-300 relative">
+          <div className="bg-dream-glass rounded-2xl p-8 text-center group transition-all duration-300 relative">
             <div className="w-20 h-20 bg-linear-to-r from-blue-500 to-purple-500 rounded-full mx-auto mb-6 flex items-center justify-center text-3xl font-bold text-white shadow-lg">
               🤖
             </div>
@@ -37,7 +37,7 @@ export const HowItWorks = () => {
             </p>
           </div>
 
-          <div className="bg-dream-glass rounded-2xl p-8 text-center group hover:scale-105 transition-all duration-300 relative">
+          <div className="bg-dream-glass rounded-2xl p-8 text-center group transition-all duration-300 relative">
             <div className="w-20 h-20 bg-linear-to-r from-pink-500 to-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center text-3xl font-bold text-white shadow-lg">
               🔍
             </div>

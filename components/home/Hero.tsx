@@ -48,7 +48,7 @@ export const Hero = ({
         <button
           onClick={onVisualize}
           disabled={!dreamText.trim() || isLoading}
-          className="px-8 py-4 bg-linear-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-full hover:from-purple-500 hover:to-pink-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all transform hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] relative overflow-hidden group"
+          className="px-8 py-4 bg-linear-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-full hover:from-purple-500 hover:to-pink-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all transform hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] relative overflow-hidden group"
         >
           {isLoading ? (
             <div className="flex items-center space-x-2">

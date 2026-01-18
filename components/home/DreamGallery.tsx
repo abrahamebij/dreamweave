@@ -57,7 +57,7 @@ export const DreamGallery = () => {
           {dummyDreams.map((dream) => (
             <div
               key={dream.id}
-              className="group bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:transform hover:scale-105 hover:rotate-1 transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.3)]"
+              className="group bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:transform hover:rotate-1 transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.3)]"
             >
               <div className="aspect-square overflow-hidden">
                 <img
